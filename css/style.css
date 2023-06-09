@@ -372,6 +372,23 @@ main .site-content .post-content > .post-image, .post-title {
     font-size: 1.5rem;
  }
 
+
+
+ main .post-content .post-title .Content1{
+ display: none;
+ transition: 0.5s linear;
+ }
+ main .post-content .post-title #check{
+  display: none;
+ }
+
+ main .post-content .post-title #check:checked ~ .Content1{
+  display: block;
+ }
+ 
+
+
+
  .site-content .post-content .post-title .post-btn{
     border-radius: 0;
     padding: .7rem 1.5rem;
