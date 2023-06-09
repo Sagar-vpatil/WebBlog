@@ -16,6 +16,7 @@ body{
     flex-direction: column;
     text-align: center;
     margin: 20px auto;
+   
 }
 .heading h1{
     font-size: 33px;
@@ -87,7 +88,7 @@ align-content: center;
         padding: 0px 20px;
     }
 .heading h1{
-    font-size: 20px;
+    font-size: 25px;
 }    
 .container{
     padding: 0px;
@@ -113,7 +114,7 @@ align-content: center;
 
 
 :root{
-    --accent: #6c5ce7;
+    --accent: #ffff;
     --bg: #f1c40f;
 }
 
@@ -122,13 +123,18 @@ align-content: center;
     align-items: flex-start;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 35px;
+
   }
   
   .card{
+    margin-bottom: 35px;
     width: 20rem;
     background-color: var(--accent);
-    color: #fff;
+    color: #000;
     margin: 2rem auto;
+    border: solid black 2px;
+    height: 30rem;
   }
   
   .card__name{
@@ -148,11 +154,12 @@ align-content: center;
   h1{
     margin-bottom: 1rem;
     letter-spacing: 1px;
+    color: black;
   }
   
   p{
-    font-size: 0.8em;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;;
   }
   
   .card__read-more{
@@ -160,18 +167,20 @@ align-content: center;
     opacity: 0;
     height: 0;
     transition: all 0.5s;
+    align-items: center;
   }
   
   .card__read-more--open{
     display: block;
     opacity: 1;
     height: 5rem;
+
   }
   
   .read-more-btn{
     display: inline-block;
-    color: var(--accent);
-    background-color: #eee;
+    color: #fff;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     padding: 0.6rem 1.5rem;
     font-size: 1em;
     position: relative;
@@ -185,3 +194,29 @@ align-content: center;
     box-shadow: 0 0 2rem rgba(0,0,0,0.1);
     transform: translateY(-3px);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
