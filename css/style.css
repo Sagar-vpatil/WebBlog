@@ -159,6 +159,7 @@ p{
     top: 0;
     left: 0;
     width: 100%;
+    height: 9vh;
     background-color: #f3faff;
     z-index: var(--z-fixed);
     transition: .4s;
