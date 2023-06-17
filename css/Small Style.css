@@ -1,0 +1,46 @@
+label.btn{
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Livvic);
+  cursor: pointer;
+}
+
+
+main .post-content .post-title .Content2{
+  display: none;
+  transition: 0.5s linear;
+  }
+  main .post-content .post-title #check1{
+   display: none;
+  }
+ 
+  main .post-content .post-title #check1:checked ~ .Content2{
+   display: block;
+  }
+
+
+  main .post-content .post-title .Content3{
+    display: none;
+    transition: 0.5s linear;
+    }
+    main .post-content .post-title #check2{
+     display: none;
+    }
+   
+    main .post-content .post-title #check2:checked ~ .Content3{
+     display: block;
+    }
+
+    main .post-content .post-title .Content4{
+      display: none;
+      transition: 0.5s linear;
+      }
+      main .post-content .post-title #check3{
+       display: none;
+      }
+     
+      main .post-content .post-title #check3:checked ~ .Content4{
+       display: block;
+      }
