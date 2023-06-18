@@ -643,6 +643,10 @@ footer.footer .move-up span:hover{
       margin-bottom: 2rem;
     }
 
+    footer.footer .rights{
+      margin-bottom: 4rem;
+    }
+
 }
 
 /*        x      Viewport less then or equal to 520px       x     */
