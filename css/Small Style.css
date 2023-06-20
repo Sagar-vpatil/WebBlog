@@ -44,3 +44,48 @@ main .post-content .post-title .Content2{
       main .post-content .post-title #check3:checked ~ .Content4{
        display: block;
       }
+
+
+
+      main .post-content .post-title .Content5{
+        display: none;
+        transition: 0.5s linear;
+        }
+        main .post-content .post-title #check4{
+         display: none;
+        }
+       
+        main .post-content .post-title #check4:checked ~ .Content5{
+         display: block;
+        }
+
+
+
+        
+      main .post-content .post-title .Content6{
+        display: none;
+        transition: 0.5s linear;
+        }
+        main .post-content .post-title #check5{
+         display: none;
+        }
+       
+        main .post-content .post-title #check5:checked ~ .Content6{
+         display: block;
+        }
+
+        
+      main .post-content .post-title .Content7{
+        display: none;
+        transition: 0.5s linear;
+        }
+        main .post-content .post-title #check6{
+         display: none;
+        }
+       
+        main .post-content .post-title #check6:checked ~ .Content7{
+         display: block;
+        }
+
+
+        
