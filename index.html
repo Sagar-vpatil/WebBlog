@@ -133,7 +133,8 @@ crossorigin="anonymous"></script>
     
                   <br>
                   <br>
-                  <label for="check1" class=" btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></label>
+                  <label for="check1" class=" btn post-btn Avs" onclick="SubMenu()" >
+                    Read More &nbsp; <i class="fas fa-arrow-right"></i></label>
                   <!--X Read More Post Copy From Here X-->
                 </div>
               </div>
@@ -152,7 +153,9 @@ crossorigin="anonymous"></script>
                   </div>
                 </div>
                 <div class="post-title">
-                  <input type="checkbox" id="check">
+
+
+                  
                   <a href="#">दहा लाख वीज मीटरमध्ये बिघाड, जनतेची होतेय लूट<br></a>
     
                   <p class="Content1" style="font-size: 20px;"><b style="color: black;"> नागपूर :</b>
@@ -179,7 +182,7 @@ crossorigin="anonymous"></script>
     
                   <br>
                   <br>
-                  <label for="check" class=" btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></label>
+                  <label class=" btn post-btn"  onclick="SubMenu()">Read More &nbsp; <i class="fas fa-arrow-right"></i></label>
                 </div>
               </div>
     
@@ -221,7 +224,7 @@ crossorigin="anonymous"></script>
     
                   <br>
                   <br>
-                  <label for="check2" class=" btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></label>
+                  <label for="check2" class=" btn post-btn " onclick="SubMenu()">Read More &nbsp; <i class="fas fa-arrow-right"></i></label>
                   <!--X Read More Post Copy From Here X-->
                 </div>
               </div>
@@ -576,6 +579,14 @@ crossorigin="anonymous"></script>
   </footer>
 
   <!-- --------------X---------------- Footer ------------------X----------------- -->
+
+
+  <script type="text/javascript">
+    function SubMenu(){
+        let  Content1= document.querySelector('.Content1');
+        Content1.classList.toggle('active');
+    }
+</script>
 
 
   <!--Jquery Library file-->
