@@ -374,12 +374,19 @@ main .site-content .post-content > .post-image, .post-title {
  }
 
 
+
  main .post-content .post-title .Content1{
- display: none;
- }
- main .post-content .post-title .Content1.active{
-  display: block;
- }
+  display: none;
+  transition: 0.5s linear;
+  }
+  main .post-content .post-title #check{
+   display: none;
+  }
+ 
+  main .post-content .post-title #check:checked ~ .Content1{
+   display: block;
+  }
+
 
 
  .site-content .post-content .post-title .post-btn{
