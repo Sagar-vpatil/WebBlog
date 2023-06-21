@@ -121,7 +121,7 @@ crossorigin="anonymous"></script>
                 <div class="post-title">
                   <!-- Read More Post Copy From Here-->
                   <input type="checkbox" id="check1">
-                  <a href="#">"वांद्रेमध्ये नोकराने मारला लाखोंच्या ऐवजावर डल्ला, रोख रक्कम, दागिन्यांचा समावेश<br></a>
+                  <a href="#" id="Avs">"वांद्रेमध्ये नोकराने मारला लाखोंच्या ऐवजावर डल्ला, रोख रक्कम, दागिन्यांचा समावेश<br></a>
     
                   <p class="Content2" style="font-size: 20px;"><b style="color: black;">
                     मुंबई : </b>: वांद्रे पोलिसांच्या हद्दीत राहणाऱ्या शिवानी भाटिया (७०) यांच्या घरी काम करणाऱ्या नोकराने घरातील दागिने आणि रक्कम मिळून जवळपास ४ लाख ६० हजारांचा डल्ला मारला. या नोकराचे नाव सुनील कुमार असे असून १८ जूनला हा प्रकार उघडकीस आला.
@@ -133,8 +133,8 @@ crossorigin="anonymous"></script>
     
                   <br>
                   <br>
-                  <label for="check1" class=" btn post-btn Avs" onclick="SubMenu()" >
-                    Read More &nbsp; <i class="fas fa-arrow-right"></i></label>
+                  <a  href="#Avs" style="font-style:non; color: black;"><label for="check1" class=" btn post-btn" onclick="SubMenu()" >
+                   Read More &nbsp; <i class="fas fa-arrow-right"></i>  </label></a>
                   <!--X Read More Post Copy From Here X-->
                 </div>
               </div>
@@ -585,6 +585,8 @@ crossorigin="anonymous"></script>
     function SubMenu(){
         let  Content1= document.querySelector('.Content1');
         Content1.classList.toggle('active');
+
+      
     }
 </script>
 
