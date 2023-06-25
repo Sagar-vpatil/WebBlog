@@ -309,11 +309,12 @@ crossorigin="anonymous"></script>
   function init(){
     const postImage =document.querySelector(".post-img");
     let posturl= encodeURI(document.location.href);
-    let postTitle= encodeURI("नाश्त्याला झटपट करा मस्त गुजराथी स्पॉंजी खमण ढोकळा; विकतसारखा ढोकळा बनेल घरीच...\n*🪀Whatapp वर न्यूज/जॉब्स/माहिती/मनोरंजन आणि बरच काही, बी अपडेट Free सेवा सुरू करण्यासाठी त्वरित आमच्या WhatsApp Community ला Join व्हा! ✅* \n*👇🪀Community Joining Link🔗*➡️https://chat.whatsapp.com/HOe7hNd7eVbD15MY2IaJn9 \n *वाचा सविस्तर👇*\n");
+    let postTitle1= encodeURI("*🌀Beupdate Recipe Updates🌐*\n *👉नाश्त्याला झटपट करा मस्त गुजराथी स्पॉंजी खमण ढोकळा; विकतसारखा ढोकळा बनेल घरीच...*\n*वाचा सविस्तर👇*\n")
+    let postTitle= encodeURI("*🪀Whatapp वर न्यूज/जॉब्स/माहिती/मनोरंजन आणि बरच काही, बी अपडेट Free सेवा सुरू करण्यासाठी त्वरित आमच्या WhatsApp Community ला Join व्हा! ✅* \n*👇🪀Community Joining Link🔗*➡️https://chat.whatsapp.com/HOe7hNd7eVbD15MY2IaJn9 \n");
     let postIMGS= encodeURI(postImage.src);
     whatsappBtn.setAttribute(
       "href", 
-      `https://api.whatsapp.com/send?text=${postTitle} ${posturl}&media=${postIMGS}`
+      `https://api.whatsapp.com/send?text=${postTitle1} ${posturl} ${postTitle}`
       );
 
       telegramBtn.setAttribute(
