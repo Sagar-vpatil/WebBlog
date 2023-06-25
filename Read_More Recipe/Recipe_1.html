@@ -313,7 +313,7 @@ crossorigin="anonymous"></script>
     let postIMGS= encodeURI(postImage.src);
     whatsappBtn.setAttribute(
       "href", 
-      `https://api.whatsapp.com/send?text=${postTitle} ${posturl} media=${postIMGS}`
+      `https://api.whatsapp.com/send?text=${postTitle} ${posturl}&media=${postIMGS}`
       );
 
       telegramBtn.setAttribute(
