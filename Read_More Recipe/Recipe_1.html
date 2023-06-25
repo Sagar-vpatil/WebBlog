@@ -309,11 +309,11 @@ crossorigin="anonymous"></script>
   function init(){
     const postImage =document.querySelector(".post-img");
     let posturl= encodeURI(document.location.href);
-    let postTitle= encodeURI("नाश्त्याला झटपट करा मस्त गुजराथी स्पॉंजी खमण ढोकळा; विकतसारखा ढोकळा बनेल घरीच...");
+    let postTitle= encodeURI("नाश्त्याला झटपट करा मस्त गुजराथी स्पॉंजी खमण ढोकळा; विकतसारखा ढोकळा बनेल घरीच...\n");
     let postIMGS= encodeURI(postImage.src);
     whatsappBtn.setAttribute(
       "href", 
-      `https://api.whatsapp.com/send?text=${postTitle} ${posturl}&media=${postIMGS}`
+      `https://api.whatsapp.com/send?text=${postTitle} ${posturl} media=${postIMGS}`
       );
 
       telegramBtn.setAttribute(
