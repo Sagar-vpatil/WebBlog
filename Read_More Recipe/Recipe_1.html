@@ -114,7 +114,7 @@ crossorigin="anonymous"></script>
                   </div>
                   <div class="post-image">
                     <div>
-                      <img src="https://d3pc1xvrcw35tl.cloudfront.net/images/1200x900/0fc3494a-4c5c-4ae7-9899-2ff110e72918_2023061029639.jpg" 
+                      <img class="post-img" src="https://d3pc1xvrcw35tl.cloudfront.net/images/1200x900/0fc3494a-4c5c-4ae7-9899-2ff110e72918_2023061029639.jpg" 
                       class="img" alt="blog1" style="height: 60%; width: 100%;">
                     </div>
                     <div class="post-info flex-row">
@@ -124,7 +124,9 @@ crossorigin="anonymous"></script>
                     </div>
                   </div>
                   <div class="post-title">
-                    
+                   <a href="#" class="twitter-btn" style="color: #0077b5;"><i class="fab fa-twitter"></i></a>
+                   <a href="#" class="telegram-btn" style="color: #0077b5;"><i class="fab fa-telegram"></i></a>
+                   <a href="#" class="whatsapp-btn" style="color: #25d366;"><i class="fab fa-whatsapp"></i></a>
                   <br>
                   <p style="font-size: 20px;">
                  <b style="font-size: 20px; color: black;">How To Make Perfect Gujrati Style Khaman Dhokla Marathi Recipe :</b><br> रोज उठून नाश्त्याला काय करायचं असा प्रश्न आपल्याला पडतो.
@@ -292,6 +294,41 @@ crossorigin="anonymous"></script>
   <!-- --------------X---------------- Footer ------------------X----------------- -->
 
 
+
+  <!-- 
+    https://twitter.com/share?url=[post-url]&text=[post-title]
+    https://api.whatsapp.com/send?text=[post-title] [post-url]
+    https://telegram.me/share/url?url={url}&text={text}
+
+  -->
+<script>
+  const whatsappBtn=document.querySelector(".whatsapp-btn");
+  const telegramBtn=document.querySelector(".telegram-btn");
+  const twitterBtn=document.querySelector(".twitter-btn");
+
+  function init(){
+    const postImage =document.querySelector(".post-img");
+    let posturl= encodeURI(document.location.href);
+    let postTitle= encodeURI("नाश्त्याला झटपट करा मस्त गुजराथी स्पॉंजी खमण ढोकळा; विकतसारखा ढोकळा बनेल घरीच...");
+    let postIMGS= encodeURI(postImage.src);
+    whatsappBtn.setAttribute(
+      "href", 
+      `https://api.whatsapp.com/send?text=${postTitle} ${posturl}&media=${postIMGS}`
+      );
+
+      telegramBtn.setAttribute(
+      "href", 
+      `  https://telegram.me/share/url?url=${posturl}&text=${postTitle}`
+      );
+
+      twitterBtn.setAttribute(
+      "href", 
+      `  https://twitter.com/share?url=${posturl}&text=${postTitle}`        
+      );
+  }
+
+  init();
+</script>
   <!--Jquery Library file-->
   <script src="../js/Jquery3.6.3.min.js"></script>
 
