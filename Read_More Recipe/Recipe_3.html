@@ -112,7 +112,7 @@ crossorigin="anonymous"></script>
                   </div>
                   <div class="post-image">
                     <div>
-                      <img src="https://gumlet.assettype.com/saamtv%2F2023-06%2F5f689335-6176-4e5a-85c9-5380400666f6%2Fsandwich_ph.jpg?auto=format%2Ccompress&fit=max&format=webp&w=768&dpr=1.3" 
+                      <img class="post-img" src="https://gumlet.assettype.com/saamtv%2F2023-06%2F5f689335-6176-4e5a-85c9-5380400666f6%2Fsandwich_ph.jpg?auto=format%2Ccompress&fit=max&format=webp&w=768&dpr=1.3" 
                       class="img" alt="blog1" style="height: 60%; width: 100%;">
                     </div>
                     <div class="post-info flex-row">
@@ -122,7 +122,9 @@ crossorigin="anonymous"></script>
                     </div>
                   </div>
                   <div class="post-title">
-                    
+                    <a href="#" class="twitter-btn" style="color: #0077b5; font-size:30px ;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="telegram-btn" style="color: #0077b5; font-size:30px"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="whatsapp-btn" style="color: #25d366; font-size:30px"><i class="fab fa-whatsapp"></i></a>
                   <br>
                   <p style="font-size: 20px;">
                  <b style="font-size: 20px; color: black;">Chapati Sandwich Recipe :</b><br> जर दुपारच्या जेवणात चपाती उरली असेल तर तुम्ही रात्रीचे जेवण वेगळ्या पद्धतीने बनवू शकता. 
@@ -287,6 +289,39 @@ crossorigin="anonymous"></script>
   </footer>
 
   <!-- --------------X---------------- Footer ------------------X----------------- -->
+
+  <script>
+    const whatsappBtn=document.querySelector(".whatsapp-btn");
+    const telegramBtn=document.querySelector(".telegram-btn");
+    const twitterBtn=document.querySelector(".twitter-btn");
+  
+    function init(){
+      const postImage =document.querySelector(".post-img");
+    let posturl= encodeURI(document.location.href);
+    let postTitle1= encodeURI("*🌀Beupdate Recipe Updates🌐*\n *👉Chapati Sandwich : उरलेल्या चपात्या टाकू नका..! 'हे' खास सँडविच बनवण्यासाठी पहा रेसिपी*\n*वाचा सविस्तर👇*\n")
+    let postTitle= encodeURI("\n\n*🪀Whatapp वर न्यूज/जॉब्स/माहिती/मनोरंजन आणि बरच काही, बी अपडेट Free सेवा सुरू करण्यासाठी त्वरित आमच्या WhatsApp Community ला Join व्हा! ✅* \n\n*👇🪀Community Joining Link🔗*➡️https://chat.whatsapp.com/HOe7hNd7eVbD15MY2IaJn9 \n\n*👇Our Official Website Link🔗*\n➡️https://beupdate.netlify.app/");
+    let postIMGS= encodeURI(postImage.src);
+    whatsappBtn.setAttribute(
+      "href", 
+      `https://api.whatsapp.com/send?text=${postTitle1} ${posturl} ${postTitle}`
+      );
+
+      telegramBtn.setAttribute(
+      "href", 
+      `  https://telegram.me/share/url?text=${postTitle}&url=${posturl}&text=${postTitle1}`
+      );
+
+      twitterBtn.setAttribute(
+      "href", 
+      `  https://twitter.com/share?url=${posturl}&text=${postTitle1}`        
+      );
+    }
+  
+  init();
+  
+  
+    
+  </script>
 
 
   <!--Jquery Library file-->

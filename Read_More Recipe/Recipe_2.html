@@ -112,7 +112,7 @@
                   </div>
                   <div class="post-image">
                     <div>
-                      <img src="https://www.loksatta.com/wp-content/uploads/2023/04/New-Project-3-21.jpg" 
+                      <img class="post-img" src="https://www.loksatta.com/wp-content/uploads/2023/04/New-Project-3-21.jpg" 
                       class="img" alt="blog1" style="height: 60%; width: 100%;">
                     </div>
                     <div class="post-info flex-row">
@@ -122,7 +122,9 @@
                     </div>
                   </div>
                   <div class="post-title">
-                    
+                    <a href="#" class="twitter-btn" style="color: #0077b5; font-size:30px ;"><i class="fab fa-twitter"></i></a>
+                   <a href="#" class="telegram-btn" style="color: #0077b5; font-size:30px"><i class="fab fa-telegram"></i></a>
+                   <a href="#" class="whatsapp-btn" style="color: #25d366; font-size:30px"><i class="fab fa-whatsapp"></i></a>
                   <br>
                   <p style="font-size: 20px;">
                  <b style="font-size: 20px; color: black;">Mutton Chops Recipe In Marathi:</b><br> बऱ्याचजणांसाठी नॉन व्हेज जीव की प्राण असते. 
@@ -321,7 +323,38 @@
   </footer>
 
   <!-- --------------X---------------- Footer ------------------X----------------- -->
+  <script>
+    const whatsappBtn=document.querySelector(".whatsapp-btn");
+    const telegramBtn=document.querySelector(".telegram-btn");
+    const twitterBtn=document.querySelector(".twitter-btn");
+  
+    function init(){
+      const postImage =document.querySelector(".post-img");
+    let posturl= encodeURI(document.location.href);
+    let postTitle1= encodeURI("*🌀Beupdate Recipe Updates🌐*\n *👉Mutton Chops : नॉन व्हेज खायचा मूड झालाय? घरच्या घरी बनवा चविष्ट मटण चॉप्स, नोट करा रेसिपी*\n*वाचा सविस्तर👇*\n")
+    let postTitle= encodeURI("\n\n*🪀Whatapp वर न्यूज/जॉब्स/माहिती/मनोरंजन आणि बरच काही, बी अपडेट Free सेवा सुरू करण्यासाठी त्वरित आमच्या WhatsApp Community ला Join व्हा! ✅* \n\n*👇🪀Community Joining Link🔗*➡️https://chat.whatsapp.com/HOe7hNd7eVbD15MY2IaJn9 \n\n*👇Our Official Website Link🔗*\n➡️https://beupdate.netlify.app/");
+    let postIMGS= encodeURI(postImage.src);
+    whatsappBtn.setAttribute(
+      "href", 
+      `https://api.whatsapp.com/send?text=${postTitle1} ${posturl} ${postTitle}`
+      );
 
+      telegramBtn.setAttribute(
+      "href", 
+      `  https://telegram.me/share/url?text=${postTitle}&url=${posturl}&text=${postTitle1}`
+      );
+
+      twitterBtn.setAttribute(
+      "href", 
+      `  https://twitter.com/share?url=${posturl}&text=${postTitle1}`        
+      );
+    }
+  
+  init();
+  
+  
+    
+  </script>
 
   <!--Jquery Library file-->
   <script src="../js/Jquery3.6.3.min.js"></script>

@@ -124,9 +124,10 @@ crossorigin="anonymous"></script>
                     </div>
                   </div>
                   <div class="post-title">
-                   <a href="#" class="twitter-btn" style="color: #0077b5;"><i class="fab fa-twitter"></i></a>
-                   <a href="#" class="telegram-btn" style="color: #0077b5;"><i class="fab fa-telegram"></i></a>
-                   <a href="#" class="whatsapp-btn" style="color: #25d366;"><i class="fab fa-whatsapp"></i></a>
+
+                   <a href="#" class="twitter-btn" style="color: #0077b5; font-size:30px ;"><i class="fab fa-twitter"></i></a>
+                   <a href="#" class="telegram-btn" style="color: #0077b5; font-size:30px"><i class="fab fa-telegram"></i></a>
+                   <a href="#" class="whatsapp-btn" style="color: #25d366; font-size:30px"><i class="fab fa-whatsapp"></i></a>
                   <br>
                   <p style="font-size: 20px;">
                  <b style="font-size: 20px; color: black;">How To Make Perfect Gujrati Style Khaman Dhokla Marathi Recipe :</b><br> रोज उठून नाश्त्याला काय करायचं असा प्रश्न आपल्याला पडतो.
@@ -336,13 +337,14 @@ crossorigin="anonymous"></script>
 
       telegramBtn.setAttribute(
       "href", 
-      `  https://telegram.me/share/url?url=${posturl}&text=${postTitle}`
+      `  https://telegram.me/share/url?text=${postTitle}&url=${posturl}&text=${postTitle1}`
       );
 
       twitterBtn.setAttribute(
       "href", 
-      `  https://twitter.com/share?url=${posturl}&text=${postTitle}`        
+      `  https://twitter.com/share?url=${posturl}&text=${postTitle1}`        
       );
+
   }
 
   init();
